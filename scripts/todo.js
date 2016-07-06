@@ -25,32 +25,4 @@ angular.module('todoApp', [])
             if (!todo.done) todoList.todos.push(todo);
         });
     };
-})
-
-.config(function($routeProvider) {
-  var resolveProjects = {
-    projects: function (Projects) {
-      return Projects.fetch();
-  }
-};
-
-$routeProvider
-.when('/', {
-  controller:'TodoListController as todoApp',
-  templateUrl:'index.html',
-  resolve: resolveProjects
-})
-.when('/edit/:projectId', {
-  controller:'EditProjectController as editProject',
-  templateUrl:'detail.html',
-  resolve: resolveProjects
-})
-.when('/new', {
-  controller:'NewProjectController as editProject',
-  templateUrl:'detail.html',
-  resolve: resolveProjects
-})
-.otherwise({
-  redirectTo:'/'
-});
 });

@@ -16,7 +16,7 @@ angular.module('App',['ngRoute', 'ngResource'])
 		templateUrl:'templates/games-template.html'
 	})
 	.when('/todo', {
-		controller:'DummyController',
+		controller:'TodoListController as todoApp',
 		templateUrl:'templates/todo-template.html'
 	})
 	.otherwise({

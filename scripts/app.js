@@ -5,18 +5,19 @@ angular.module('App',[ngRoute])
 	$routeProvider
 	.when('/', {
 		controller:'DummyController',
-		templateUrl:'index.html',
-		resolve: resolveProjects
+		templateUrl:'templates/main-template.html',
 	})
-	.when('/edit/:projectId', {
+	.when('/about', {
 		controller:'DummyController',
-		templateUrl:'detail.html',
-		resolve: resolveProjects
+		templateUrl:'templates/about-template.html',
 	})
-	.when('/new', {
+	.when('/games', {
 		controller:'DummyController',
-		templateUrl:'detail.html',
-		resolve: resolveProjects
+		templateUrl:'templates/games-template.html',
+	})
+	.when('/todo', {
+		controller:'DummyController',
+		templateUrl:'templates/todo-template.html',
 	})
 	.otherwise({
 		redirectTo:'/'

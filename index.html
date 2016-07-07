@@ -3,35 +3,35 @@
 <head>
     <title>Nightcode</title>
     <style>
-    nav ul li {
-        display: inline;
-        padding: 0px 20px;
-    }
+        nav ul li {
+            display: inline;
+            padding: 0px 20px;
+        }
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-resource.js">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js">
-    </script>
-    <script src="app/app.js"></script>
-    <script src="app/todo.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="todo-list/todo-list.module.js"></script>
+    <script src="todo-list/todo-list.component.js"></script>
+    <script src="todo-detail/todo-detail.module.js"></script>
+    <script src="todo-detail/todo-detail.component.js"></script>
 
     <link rel="stylesheet" href="css/todo.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="todo">Todo</a></li>
-            <li><a href="calendar">Calendar</a></li>
-            <li><a href="game">Nightcode Game</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="todo-detail">Todo</a></li>
+        <li><a href="calendar">Calendar</a></li>
+        <li><a href="game">Nightcode Game</a></li>
+    </ul>
+</nav>
 
-    <div ng-view>
-
-    </div>
+<div ng-view></div>
 
 
 </body>

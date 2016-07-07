@@ -1,6 +1,6 @@
-angular.module('todoApp', [])
+angular.module('todoList', [])
     .component('todoList', {
-        templateUrl:'../templates/todo-template.html',
+        templateUrl:'../../templates/todo-template.html',
 
         controller: function TodoListController() {
             var todoList = this;

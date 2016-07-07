@@ -1,5 +1,4 @@
-angular.
-module('todoDetail').
+angular.module('todoDetail').
 component('todoDetail', {
     template: 'TBD: Detail view for <span>{{$ctrl.todoId}}</span>',
     controller: ['$routeParams',

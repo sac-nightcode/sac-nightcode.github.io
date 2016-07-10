@@ -28,5 +28,6 @@ angular.module('todoList', [])
                     if (!todo.done) todoList.todos.push(todo);
                 });
             };
-        }
+        },
+        controllerAs: "todoList"
     });

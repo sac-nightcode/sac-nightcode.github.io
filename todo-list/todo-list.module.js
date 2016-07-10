@@ -1,3 +1,1 @@
-angular.module('todoList', [
-    'ngRoute'
-]);
+angular.module('todoList', ['ngRoute']);

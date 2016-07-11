@@ -5,8 +5,8 @@ angular.module('todoList', [])
         controller: function TodoListController() {
             var todoList = this;
             todoList.todos = [
-                {text: 'learn angular', done: true},
-                {text: 'build an angular app', done: false}];
+                {text: 'learn angular', done: true, id:1468270287439},
+                {text: 'build an angular app', done: false, id:1468270323107}];
 
             todoList.addTodo = function () {
                 todoList.todos.push({text: todoList.todoText, done: false});

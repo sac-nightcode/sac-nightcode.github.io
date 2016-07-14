@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass stylesheets/main.scss css/main.css",
+    "start": "npm run build && http-server -a localhost -p 8000 -o"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
   "devDependencies": {
     "angular": "^1.5.7",
     "angular-resource": "^1.5.7",
-    "angular-route": "^1.5.7"
+    "angular-route": "^1.5.7",
+    "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.6"
   }
 }

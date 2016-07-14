@@ -5809,5 +5809,11 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+h1 {
+  color: #2e6da4; }
+
+nav ul li {
+  display: inline;
+  padding: 0px 20px; }
 
 /*# sourceMappingURL=main.css.map */

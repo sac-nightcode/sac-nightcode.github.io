@@ -8,11 +8,11 @@ config(['$locationProvider', '$routeProvider',
             when('/', {
                 templateUrl: 'templates/home-template.html'
             }).
-            when('/todo', {
-                template: '<todo-list></todo-list>'
+            when('/ref', {
+                templateUrl: 'templates/ref-template.html'
             }).
-            when('/todo/:todoId', {
-                template: '<todo-detail></todo-detail>'
+            when('/users', {
+                templateUrl: 'templates/users-template.html'
             }).
             otherwise({redirectTo: '/'});
     }

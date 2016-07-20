@@ -4,7 +4,7 @@
     <li ng-repeat="todo in todoList.todos">
         <label class="checkbox">
             <input type="checkbox" ng-model="todo.done">
-            <span class="done-{{todo.done}}" href='{{todo.id}}'>{{todo.text}}</span>
+            <span class="done-{{todo.done}}"><a href='{{todo.id}}'>{{todo.text}}</a></span>
         </label>
     </li>
 </ul>

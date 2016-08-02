@@ -1,5 +1,5 @@
 angular
-.module('myApp', [])
+.module('lrRefMod', [])
 .controller('LrReferenceController', function(){
 	this.Data={
 		Title: '',

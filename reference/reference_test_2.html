@@ -1,17 +1,21 @@
 <!doctype html>
-<html ng-app = 'lrRefWrapMod'>
+<html ng-app = 'lrRefMod'>
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-	<lr-ref-wrap></lr-ref-wrap><br>
-	<lr-ref-wrap></lr-ref-wrap><br>
-	<lr-ref-wrap></lr-ref-wrap><br>
-	<lr-ref-wrap></lr-ref-wrap><br>
-	<lr-ref-wrap></lr-ref-wrap><br>
+	<div ng-controller='LrReferenceController as ctrl'>
+		<h2>will these link?</h2>
+		<lr-in-reference></lr-in-reference><hr>
+		<lr-out-reference ctrl.Data.Title="hello"></lr-out-reference>
+	</div>
+	<div ng-controller='LrReferenceController as ctrl'>
+		<h2>will these link?</h2>
+		<lr-in-reference></lr-in-reference><hr>
+		<lr-out-reference></lr-out-reference>
+	</div>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="../node_modules/angular/angular.js"></script>
-	<script src="reference_wrap.js"></script>
 	<script src="reference.js"></script>
 </body>
 </html>

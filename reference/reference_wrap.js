@@ -7,6 +7,6 @@ angular
 	return {
 		restrict: 'AE',
 		templateUrl: 'reference_wrap.html',
-		scope: true
+		scope: {Data: '='}
 	}
 })

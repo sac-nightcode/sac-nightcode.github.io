@@ -9,7 +9,7 @@ angular
 .module('lrRefMod')
 .directive('lrInReference', 'dataIn');
 
-function putIn(){
+function dataIn(){
 	return {
 		restrict: 'AE',
 		templateUrl: 'reference_in.html',

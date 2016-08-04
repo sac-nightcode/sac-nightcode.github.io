@@ -7,22 +7,26 @@ angular
 
 angular
 .module('lrRefMod')
-.directive('lrInReference', function(){
+.directive('lrInReference', 'dataIn');
+
+function putIn(){
 	return {
 		restrict: 'AE',
 		templateUrl: 'reference_in.html',
 		controller: 'LrReferenceController',
 		controllerAs: 'ctrl'
 	}
-});
+}
 
 angular
 .module('lrRefMod')
-.directive('lrOutReference', function(){
+.directive('lrOutReference', 'dataOut');
+
+function dataOut(){
 	return {
 		restrict: 'AE',
 		templateUrl: 'reference_out.html',
 		controller: 'LrReferenceController',
 		controllerAs: 'ctrl'
 	}
-});
+}

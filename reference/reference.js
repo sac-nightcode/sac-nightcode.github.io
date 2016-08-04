@@ -1,7 +1,7 @@
 angular
 .module('lrRefMod', [])
 .controller('LrReferenceController', function(){
-	var Data = this;
+	var vm = this;
 
 });
 

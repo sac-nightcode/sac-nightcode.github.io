@@ -7,13 +7,19 @@ angular
 	return {
 		restrict: 'AE',
 		templateUrl: 'reference_in.html',
-		scope: {Data: '='}
+		controller: LrReferenceController,
+		controllerAs: 'ctrl',
+		scope: true,
+		bindToController: true
 	}
 })
 .directive('lrOutReference', function(){
 	return {
 		restrict: 'AE',
 		templateUrl: 'reference_out.html',
-		scope: {Data: '='}
+		controller: LrReferenceController,
+		controllerAs: 'ctrl',
+		scope: true,
+		bindToController: true
 	}
 })

@@ -7,7 +7,7 @@ angular
 
 angular
 .module('lrRefMod')
-.directive('lrInReference', 'dataIn');
+.directive('lrInReference', dataIn);
 
 function dataIn(){
 	return {
@@ -20,7 +20,7 @@ function dataIn(){
 
 angular
 .module('lrRefMod')
-.directive('lrOutReference', 'dataOut');
+.directive('lrOutReference', dataOut);
 
 function dataOut(){
 	return {

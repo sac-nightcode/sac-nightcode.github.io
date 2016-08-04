@@ -9,4 +9,4 @@ angular
 		templateUrl: 'reference_wrap.html',
 		scope: true
 	}
-})
+});

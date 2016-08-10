@@ -1,9 +1,0 @@
-<div ng-controller = 'LrRefWrapCntrl as showCtrl'>
-		<div ng-show = "showCtrl.displayEdit">
-			<lr-in-reference></lr-in-reference>
-		</div>
-		<div ng-hide = "showCtrl.displayEdit">
-			<lr-out-reference></lr-out-reference>
-		</div>
-	<button ng-click = "showCtrl.displayEdit =!showCtrl.displayEdit">{{showCtrl.displayEdit? 'save' : 'edit'}}</button>
-</div>

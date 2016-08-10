@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sass stylesheets/main.scss dist/css/main.css",
-    "start": "npm run build && webpack && http-server ./dist -a localhost -p 8000 -o"
+    "start": "npm run build && webpack && cp index.html dist/index.html && cp -Rp templates dist/templates/ && http-server ./dist -a localhost -p 8000 -o"
   },
   "repository": {
     "type": "git",

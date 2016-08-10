@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sass stylesheets/main.scss dist/css/main.css",
-    "start": "npm run build && http-server ./dist -a localhost -p 8000 -o"
+    "start": "npm run build && webpack && http-server ./dist -a localhost -p 8000 -o"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,10 @@
     "angular": "^1.5.7",
     "angular-resource": "^1.5.7",
     "angular-route": "^1.5.7",
+    "html-webpack-plugin": "^2.22.0",
     "http-server": "^0.9.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
     "webpack": "^1.13.1"
   },
   "dependencies": {

@@ -9,8 +9,7 @@ anglular
 	templateUrl: '/field_in.html',
 	restrict: 'AE',
 	scope: {
-	label='&',
+	label:'&'
 	
-}
 }
 }

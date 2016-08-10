@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "sass stylesheets/main.scss css/main.css",
-    "start": "npm run build"
+    "build": "sass stylesheets/main.scss dist/css/main.css",
+    "start": "npm run build && http-server ./dist -a localhost -p 8000 -o"
   },
   "repository": {
     "type": "git",

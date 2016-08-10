@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "sass stylesheets/main.scss css/main.css",
-    //"start": "npm run build && http-server -a localhost -p 8000 -o"
     "start": "npm run build"
   },
   "repository": {

@@ -12,7 +12,7 @@ angular
 function dataIn(){
 	return {
 		restrict: 'AE',
-		templateUrl: '../reference_in.html',
+		templateUrl: '../templates/reference_in.html',
 		controller: 'LrReferenceController',
 		controllerAs: 'ctrl'
 	}
@@ -25,7 +25,7 @@ angular
 function dataOut(){
 	return {
 		restrict: 'AE',
-		templateUrl: '../reference_out.html',
+		templateUrl: '../templates/reference_out.html',
 		controller: 'LrReferenceController',
 		controllerAs: 'ctrl'
 	}

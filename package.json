@@ -4,11 +4,12 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
+    "clean": "rm -Rf dist",
     "css": "sass src/stylesheets/main.scss dist/css/main.css",
     "copy": "cp src/index.html dist/index.html && cp -Rp src/templates dist/",
     "serve": "http-server ./dist -a localhost -p 8000 -o",
-    "start": "npm run css && webpack && npm run copy && npm run serve",
-    "build": "npm run css && webpack && npm run copy"
+    "build": "npm run clean && npm run css && webpack && npm run copy",
+    "start": "npm run build && npm run serve"
   },
   "repository": {
     "type": "git",

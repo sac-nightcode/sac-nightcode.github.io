@@ -33513,7 +33513,7 @@
 	                templateUrl: 'templates/home-template.html'
 	            }).
 	            when('/ref', {
-	                templateUrl: 'templates/references.html'
+	                templateUrl: 'reference/references.html'
 	            }).
 	            when('/users', {
 	                templateUrl: 'templates/users-template.html'
@@ -33540,7 +33540,7 @@
 	function dataIn(){
 		return {
 			restrict: 'AE',
-			templateUrl: 'templates/reference_in.html',
+			templateUrl: '../reference_in.html',
 			controller: 'LrReferenceController',
 			controllerAs: 'ctrl'
 		}
@@ -33553,7 +33553,7 @@
 	function dataOut(){
 		return {
 			restrict: 'AE',
-			templateUrl: 'templates/reference_out.html',
+			templateUrl: '../reference_out.html',
 			controller: 'LrReferenceController',
 			controllerAs: 'ctrl'
 		}
@@ -33571,7 +33571,7 @@
 	.directive('lrRefWrap', function(){
 		return {
 			restrict: 'AE',
-			templateUrl: 'templates/reference_wrap.html',
+			templateUrl: '../reference_wrap.html',
 			scope: true
 		}
 	});

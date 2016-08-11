@@ -6,7 +6,7 @@ angular
 .directive('lrRefWrap', function(){
 	return {
 		restrict: 'AE',
-		templateUrl: 'templates/reference_wrap.html',
+		templateUrl: '../reference_wrap.html',
 		scope: true
 	}
 });

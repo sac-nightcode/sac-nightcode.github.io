@@ -9,7 +9,7 @@ config(['$locationProvider', '$routeProvider',
                 templateUrl: 'templates/home-template.html'
             }).
             when('/ref', {
-                templateUrl: 'templates/references.html'
+                templateUrl: 'reference/references.html'
             }).
             when('/users', {
                 templateUrl: 'templates/users-template.html'

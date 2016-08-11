@@ -2,10 +2,10 @@
   "name": "sac-nightcode.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "build": "sass stylesheets/main.scss dist/css/main.css",
-    "start": "npm run build && webpack && cp index.html dist/index.html && cp -Rp templates dist/templates/ && http-server ./dist -a localhost -p 8000 -o"
+    "build": "sass src/stylesheets/main.scss dist/css/main.css",
+    "start": "npm run build && webpack && cp src/index.html dist/index.html && cp -Rp src/templates dist/templates/ && http-server ./dist -a localhost -p 8000 -o"
   },
   "repository": {
     "type": "git",

@@ -1,12 +1,12 @@
 angular
-.module('lrRefWrapMod', ['lrRefMod'])
+.module('lrRefWrapMod')
 .controller('LrRefWrapCntrl', function(){
 	this.displayEdit = true;
 })
 .directive('lrRefWrap', function(){
 	return {
 		restrict: 'AE',
-		templateUrl: 'reference_wrap.html',
+		templateUrl: 'templates/reference_wrap.html',
 		scope: true
 	}
 });

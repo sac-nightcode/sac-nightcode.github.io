@@ -1,5 +1,5 @@
 angular.
-module('todoApp').
+module('lrRefWrapMod').
 config(['$locationProvider', '$routeProvider',
     function config($locationProvider, $routeProvider) {
         $locationProvider.hashPrefix('!');
@@ -9,7 +9,7 @@ config(['$locationProvider', '$routeProvider',
                 templateUrl: 'templates/home-template.html'
             }).
             when('/ref', {
-                templateUrl: 'templates/ref-template.html'
+                templateUrl: 'templates/references.html'
             }).
             when('/users', {
                 templateUrl: 'templates/users-template.html'

@@ -1,5 +1,4 @@
-angular.module('todoApp', [
+angular.module('lrRefWrapMod', [
     'ngRoute',
-    'todoList',
-    'todoDetail'
+    'lrRefMod'
 ]);

@@ -51,10 +51,6 @@
 	__webpack_require__(8);
 	__webpack_require__(9);
 	__webpack_require__(10);
-	__webpack_require__(11);
-	__webpack_require__(12);
-	__webpack_require__(13);
-	__webpack_require__(14);
 
 /***/ },
 /* 1 */
@@ -33497,10 +33493,9 @@
 /* 7 */
 /***/ function(module, exports) {
 
-	angular.module('todoApp', [
+	angular.module('lrRefWrapMod', [
 	    'ngRoute',
-	    'todoList',
-	    'todoDetail'
+	    'lrRefMod'
 	]);
 
 /***/ },
@@ -33508,7 +33503,7 @@
 /***/ function(module, exports) {
 
 	angular.
-	module('todoApp').
+	module('lrRefWrapMod').
 	config(['$locationProvider', '$routeProvider',
 	    function config($locationProvider, $routeProvider) {
 	        $locationProvider.hashPrefix('!');
@@ -33518,7 +33513,7 @@
 	                templateUrl: 'templates/home-template.html'
 	            }).
 	            when('/ref', {
-	                templateUrl: 'templates/ref-template.html'
+	                templateUrl: 'templates/references.html'
 	            }).
 	            when('/users', {
 	                templateUrl: 'templates/users-template.html'
@@ -33529,72 +33524,6 @@
 
 /***/ },
 /* 9 */
-/***/ function(module, exports) {
-
-	angular.module('todoList', ['ngRoute']);
-
-/***/ },
-/* 10 */
-/***/ function(module, exports) {
-
-	angular.module('todoList', [])
-	    .component('todoList', {
-	        templateUrl:'templates/todo-template.html',
-
-	        controller: function TodoListController() {
-	            var todoList = this;
-	            todoList.todos = [
-	                {text: 'learn angular', done: true, id:1468270287439},
-	                {text: 'build an angular app', done: false, id:1468270323107}];
-
-	            todoList.addTodo = function () {
-	                todoList.todos.push({text: todoList.todoText, done: false});
-	                todoList.todoText = '';
-	            };
-
-	            todoList.remaining = function () {
-	                var count = 0;
-	                angular.forEach(todoList.todos, function (todo) {
-	                    count += todo.done ? 0 : 1;
-	                });
-	                return count;
-	            };
-
-	            todoList.archive = function () {
-	                var oldTodos = todoList.todos;
-	                todoList.todos = [];
-	                angular.forEach(oldTodos, function (todo) {
-	                    if (!todo.done) todoList.todos.push(todo);
-	                });
-	            };
-	        },
-	        controllerAs: "todoList"
-	    });
-
-/***/ },
-/* 11 */
-/***/ function(module, exports) {
-
-	angular.module('todoDetail', [
-	    'ngRoute'
-	]);
-
-/***/ },
-/* 12 */
-/***/ function(module, exports) {
-
-	angular.module('todoDetail').
-	component('todoDetail', {
-	    template: 'TBD: Detail view for <span>{{$ctrl.todoId}}</span>',
-	    controller: ['$routeParams',
-	        function TodoDetailController($routeParams) {
-	            this.todoId = $routeParams.todoId;
-	        }
-	    ]
-	});
-
-/***/ },
-/* 13 */
 /***/ function(module, exports) {
 
 	angular
@@ -33611,7 +33540,7 @@
 	function dataIn(){
 		return {
 			restrict: 'AE',
-			templateUrl: 'reference_in.html',
+			templateUrl: 'templates/reference_in.html',
 			controller: 'LrReferenceController',
 			controllerAs: 'ctrl'
 		}
@@ -33624,25 +33553,25 @@
 	function dataOut(){
 		return {
 			restrict: 'AE',
-			templateUrl: 'reference_out.html',
+			templateUrl: 'templates/reference_out.html',
 			controller: 'LrReferenceController',
 			controllerAs: 'ctrl'
 		}
 	}
 
 /***/ },
-/* 14 */
+/* 10 */
 /***/ function(module, exports) {
 
 	angular
-	.module('lrRefWrapMod', ['lrRefMod'])
+	.module('lrRefWrapMod')
 	.controller('LrRefWrapCntrl', function(){
 		this.displayEdit = true;
 	})
 	.directive('lrRefWrap', function(){
 		return {
 			restrict: 'AE',
-			templateUrl: 'reference_wrap.html',
+			templateUrl: 'templates/reference_wrap.html',
 			scope: true
 		}
 	});

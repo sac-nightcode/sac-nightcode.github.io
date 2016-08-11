@@ -8,8 +8,9 @@
     "makedirs": "mkdir dist && mkdir dist/css && mkdir dist/js",
     "css": "sass src/stylesheets/main.scss dist/css/main.css",
     "copy": "cp src/index.html dist/index.html && cp -Rp src/templates dist/",
+    "pack": "webpack && ./node_modules/.bin/uglifyjs ./dist/js/app.bundle.js -c -o ./dist/js/app.bundle.min.js",
     "serve": "http-server ./dist -a localhost -p 8000 -o",
-    "build": "npm run clean && npm run makedirs && npm run css && webpack && npm run copy",
+    "build": "npm run clean && npm run makedirs && npm run css && npm run pack && npm run copy",
     "start": "npm run build && npm run serve"
   },
   "repository": {
@@ -30,6 +31,7 @@
     "http-server": "^0.9.0",
     "node-sass": "^3.8.0",
     "sass-loader": "^4.0.0",
+    "uglify-js": "^2.7.0",
     "webpack": "^1.13.1"
   },
   "dependencies": {

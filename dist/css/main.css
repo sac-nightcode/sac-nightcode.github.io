@@ -5822,7 +5822,8 @@ body {
 /* MODULES - Individual site components */
 #linker-logo {
   text-align: center;
-  margin: 0px auto; }
+  margin: 0px auto;
+  margin-bottom: 20px; }
 
 /* LAYOUTS - Page layout styles */
 

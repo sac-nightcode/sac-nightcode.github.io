@@ -7,7 +7,7 @@
     "clean": "rm -Rf dist",
     "makedirs": "mkdir dist && cd dist && mkdir css && mkdir js && cd ..",
     "css": "sass src/stylesheets/main.scss dist/css/main.css",
-    "copy": "cp src/index.html dist/index.html && cp -Rp src/templates dist/",
+    "copy": "cp src/index.html dist/index.html && cp -Rp src/templates dist/ && cp -Rp src/images dist/",
     "pack": "webpack",
     "uglify": "uglifyjs dist/js/app.bundle.js -c -o dist/js/app.bundle.min.js",
     "serve": "http-server ./dist -a localhost -p 8000 -o",

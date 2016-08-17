@@ -5820,6 +5820,10 @@ body {
   padding-top: 70px; }
 
 /* MODULES - Individual site components */
+#linker-logo {
+  text-align: center;
+  margin: 0px auto; }
+
 /* LAYOUTS - Page layout styles */
 
 /*# sourceMappingURL=main.css.map */

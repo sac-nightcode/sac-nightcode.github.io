@@ -33530,7 +33530,6 @@
 	.module('lrRefMod', [])
 	.controller('LrReferenceController', function(){
 		var vm = this;
-
 	});
 
 	angular
@@ -33539,7 +33538,6 @@
 
 	function dataIn(){
 		return {
-			restrict: 'AE',
 			templateUrl: '../templates/reference_in.html',
 			controller: 'LrReferenceController',
 			controllerAs: 'ctrl'
@@ -33552,7 +33550,6 @@
 
 	function dataOut(){
 		return {
-			restrict: 'AE',
 			templateUrl: '../templates/reference_out.html',
 			controller: 'LrReferenceController',
 			controllerAs: 'ctrl'
@@ -33570,7 +33567,6 @@
 	})
 	.directive('lrRefWrap', function(){
 		return {
-			restrict: 'AE',
 			templateUrl: '../templates/reference_wrap.html',
 			scope: true
 		}

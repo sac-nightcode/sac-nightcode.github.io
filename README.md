@@ -9,16 +9,26 @@ It's where your links are at.
   
 ## To Get Started
 
-    ```git clone https://github.com/sac-nightcode/sac-nightcode.github.io```
     ```
-    ```npm install```
+    git clone https://github.com/sac-nightcode/sac-nightcode.github.io
+    ```
+    
+    ```
+    npm install
+    ```
     
 ## To Build
-    ```npm run build```
+    ```
+    npm run build
+    ```
 
 ## To Serve Dev Site
-    ```npm run serve```
+    ```
+    npm run serve
+    ```
     
 ## To Build and Serve
-    ```npm run start```
+    ```
+    npm run start
+    ```
 

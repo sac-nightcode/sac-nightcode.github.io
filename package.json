@@ -26,6 +26,7 @@
   "homepage": "https://github.com/sac-nightcode/sac-nightcode.github.io#readme",
   "devDependencies": {
     "angular": "^1.5.7",
+    "angular-animate": "^1.5.8",
     "angular-resource": "^1.5.7",
     "angular-route": "^1.5.7",
     "html-webpack-plugin": "^2.22.0",

@@ -1,4 +1,5 @@
 angular.module('lrRefWrapMod', [
     'ngRoute',
-    'lrRefMod'
+    'lrRefMod',
+    'ui.bootstrap'
 ]);

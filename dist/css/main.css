@@ -5819,6 +5819,10 @@ button.close {
 body {
   padding-top: 70px; }
 
+/* ui.bootstrap href fix */
+.nav, .pagination, .carousel, .panel-title a {
+  cursor: pointer; }
+
 /* MODULES - Individual site components */
 #linker-logo {
   text-align: center;

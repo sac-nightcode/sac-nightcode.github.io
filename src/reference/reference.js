@@ -2,7 +2,6 @@ angular
 .module('lrRefMod', [])
 .controller('LrReferenceController', function(){
 	var vm = this;
-
 });
 
 angular
@@ -11,7 +10,6 @@ angular
 
 function dataIn(){
 	return {
-		restrict: 'AE',
 		templateUrl: '../templates/reference_in.html',
 		controller: 'LrReferenceController',
 		controllerAs: 'ctrl'
@@ -24,7 +22,6 @@ angular
 
 function dataOut(){
 	return {
-		restrict: 'AE',
 		templateUrl: '../templates/reference_out.html',
 		controller: 'LrReferenceController',
 		controllerAs: 'ctrl'

@@ -13,7 +13,6 @@ config(['$locationProvider', '$routeProvider',
             }).
             when('/users', {
                 templateUrl: 'templates/users-template.html'
-            }).
-            otherwise({redirectTo: '/'});
+            });
     }
 ]);

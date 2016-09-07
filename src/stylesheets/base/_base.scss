@@ -1,2 +1,5 @@
 /* fix bootstrap fixed header issue */
 body { padding-top: 70px; }
+
+/* ui.bootstrap href fix */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
